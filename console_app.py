@@ -1,6 +1,6 @@
 import os
 from colorama import init, Fore, Back, Style
-from localizations import LOCALS
+from .localizations import LOCALS
 
 init(autoreset=True)
 
