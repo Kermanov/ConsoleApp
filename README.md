@@ -23,4 +23,4 @@ app = ConsoleApp(
 )
 app.run()
 ```
-![](console_app.gif)
+![](example.gif)
