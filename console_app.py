@@ -1,35 +1,12 @@
 import os
 from colorama import init, Fore, Back, Style
+from localizations import LOCALS
 
 init(autoreset=True)
 
-LOCALS = {
-    "eng": {
-        "hint": "Enter \"help\" for functions description.",
-        "help": "displays info about functions",
-        "clear": "clears the console",
-        "exit": "closes the app",
-        "args_error": "Enter the required number of arguments.",
-        "error": "Error",
-        "unknown_command": "Unknown command."
-    },
-    "ukr": {
-        "hint": "Введіть \"help\" для опису всіх функцій.",
-        "help": "відображає інформацію про всі функції",
-        "clear": "очищає консоль",
-        "exit": "закриває вікно",
-        "args_error": "введіть потрібну кількість елементів.",
-        "error": "Помилка:",
-        "unknown_command": "Невідома команда."
-    }
-}
-
 class Method:
-    """Оболочка для функции используемой в приложении.
-
-    Имеет описание, саму функцию, и может быть inline,
-    то есть принимать в себя аргументы.
-    """
+    """Wrapper for functions which used in app."""
+    
     def __init__(self, descr, function, inline=False):
         self.descr = descr
         self.function = function
