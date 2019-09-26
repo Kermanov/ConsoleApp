@@ -1,4 +1,4 @@
-# console_app
+# ConsoleApp
 ## Description
 It is package that implements simple console interface for small programs.
 Working at Windows.
